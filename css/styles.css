@@ -68,8 +68,9 @@ main {
   margin: 0 auto;
 }
 #intro {
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
@@ -124,3 +125,92 @@ footer {
       width: 60%;
   }
 }
+/* cookie clicker */
+
+#cookiecontainer {
+  padding: 10px;
+}
+.cookiecolumn {
+  flex: 50%;
+  box-sizing: border-box;
+}
+
+.shop {
+  flex: 12.5%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.upg {
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+}
+
+button.shop .object-data {
+  position: absolute;
+  text-align: left;
+  background: black;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  color: #fff;
+  width: 100px;
+}
+
+button.shop:hover .object-data {
+  opacity: 1;
+}
+
+button.upg .object-data {
+  position: absolute;
+  text-align: left;
+  background: black;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  color: #fff;
+  width: 80px;
+}
+
+button.upg:hover .object-data {
+  opacity: 1;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.show {display:block;}

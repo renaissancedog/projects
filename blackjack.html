@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blackjack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <main>
+    <script>
+      $(document).ready(function() {
+        $("#nav").load("nav.html");
+      });
+    </script><div id="nav"></div>
+    <h1>Blackjack</h1>
+    <div class="rowcontainer">
+      <div class="column">
+        <h3 id="rounds"></h3>
+        <p id="cards">Cards: </p>
+        <p id="sum">Sum: </p>
+        <p id="dealerCard">Dealer's Cards: </p>
+        <p id="money">Money: $200</p>
+        <button onclick="start()">Start New Game</button>
+        <button onclick="game.hit()">Hit</button>
+        <button onclick="game.stand()">Stand</button>
+        <h2>Game Information</h2>
+        <p id="roundinfo"></p>
+        <p id="playerCards"></p>
+        <p id="playerScore"></p>
+        <p id="dealerCards"></p>
+        <p id="dealerScore"></p>
+        <p id="info3"></p>
+      </div>
+      <div class="column">
+        <h2>Setup</h2>
+        <p>Cards are written with their rank, then suit. For example, the 10 of hearts is 10H.</p>
+        <p>This is 1-deck Blackjack. Dealer hits on soft 17. Cards are shuffled every 5 rounds.</p>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="js/blackjack.js"></script>
+</html>
